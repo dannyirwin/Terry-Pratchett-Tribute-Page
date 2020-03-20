@@ -1,0 +1,92 @@
+:root {
+    --turquoise: #087e8b;
+    --salmon: #ff5a5f;
+    --basic-text-color: #3c3c3c;
+    --off-white: #f4f4f4;
+    --wine: #751022;
+}
+
+body {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: var(--basic-text-color);
+}
+
+h1 {
+    color: var(--off-white);
+}
+
+h3 {
+    color: var(--off-white);
+}
+
+
+
+img {
+    max-width: 90vw;
+    align-self: center;
+}
+
+.card {
+    text-align: start;
+    background: var(--off-white);
+    margin: 5px;
+    padding: 1vh;
+    padding-left: 10px;
+    border-left: 5px solid var(--salmon);
+    transition: 1s ease-out;
+}
+
+.card.closed {
+    border-left: 5px solid var(--wine);
+    transition: 1s ease-out;
+}
+        
+.card.closed > p {
+    max-height:0;
+    overflow: hidden;
+    transition: 1s ease-out;
+}
+
+.card.closed > ul {
+    max-height:0;
+    overflow: hidden;
+    transition: 1s ease-out;
+}
+
+#header {
+    background: var(--turquoise);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    transition: 0.2s;
+}
+
+#main {
+    margin-top: 160px;
+}
+
+#footer {
+    background: var(--turquoise);
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
+    color: var(--off-white);
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {}
